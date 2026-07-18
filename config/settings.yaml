@@ -1,0 +1,25 @@
+project:
+  name: "FactorInvesting"
+
+data:
+  start_date: "2015-01-01"
+  end_date: "2025-12-31"
+  frequency: "monthly"
+  universe: "sp500_current"
+  benchmark: "^GSPC"
+
+factors:
+  size: true
+  value: true
+  momentum: true
+
+portfolio:
+  number_of_groups: 5
+  weighting: "equal"
+  rebalance_frequency: "monthly"
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  results: "results"
+  figures: "figures"
